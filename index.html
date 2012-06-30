@@ -1,0 +1,28 @@
+<style>
+*{margin:0;padding:0;color:#999;font-family:helvetica}
+body{background-image: -webkit-linear-gradient(#aaa 50%,#999 50%);background-size: 50px}
+p{display:block;opacity:0;tranform-origin:center center;-webkit-transform:rotateZ(90deg);position:absolute;top:100px;left:1000px;font-size:900%;}
+@-webkit-keyframes a{
+from{-webkit-transform:rotateZ(90deg);opacity:0}
+15%{-webkit-transform:rotateZ(0deg);opacity:1}
+25%{top:300px}
+30%{color:#4B7AD4;text-shadow:0 0 8px #4B7AD4}
+40%{color:#5763F6;text-shadow:0 0 8px #5763F6}
+50%{color:#5EB4EB;text-shadow:0 0 8px #5EB4EB;top:100px}
+60%{color:#5763F6;text-shadow:0 0 8px #5763F6}
+70%{color:#4B7AD4;text-shadow:0 0 8px #4B7AD4}
+75%{top:300px}
+85%{opacity:1}
+to{-webkit-transform:rotateZ(20deg);opacity:0;top: 100px;left:0}
+</style>
+<body/>
+<script>i=0
+"Hello DemoJS! Thx 4 everything! \\o/. Btw this is mostly CSS :P! 1k is not that much.".split(" ").map(function(e){
+a=document.createElement("p")
+a.style.webkitAnimation="a 2s "+(i++)+"s 1"
+a.innerHTML=e
+return a
+}).forEach(function(e){
+document.body.appendChild(e)
+})
+</script> 
