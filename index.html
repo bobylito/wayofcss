@@ -1,10 +1,33 @@
-<style>*{color:#999;font-family:arial}body{background-image:-webkit-linear-gradient(#caa 50%,#c99 50%);background-size: 50px}p{display:block;opacity:0;-webkit-transform:rotateZ(90deg);position:absolute;top:100px;left:1000px;font-size:900%;}@-webkit-keyframes a{from{-webkit-transform:rotateZ(90deg);opacity:0}15%{-webkit-transform:rotateZ(0deg);opacity:1}25%{top:200px}30%{color:#4B7AD4;text-shadow:0 0 8px #4B7AD4}40%{color:#5763F6;text-shadow:0 0 8px #5763F6}50%{color:#5EB4EB;text-shadow:0 0 8px #5EB4EB;top:100px}60%{color:#5763F6;text-shadow:0 0 8px #5763F6}70%{color:#4B7AD4;text-shadow:0 0 8px #4B7AD4}75%{top:200px}85%{opacity:1}to{-webkit-transform:rotateZ(20deg);opacity:0;top:100px;left:0}}</style><body><script>i=0
-"Hi DemoJS partiers and orga! Thx 4 being awesome! CSS rulez! 1k is not that, much yet enough. \\o/".split(" ").map(function(e){
-a=document.createElement("p")
+<style>
+*{color:#4B7AD4;font-family:arial}
+body{background-image:-webkit-linear-gradient(#333 50%,#222 50%);background-size: 50px;}
+p{display:block;opacity:0;-webkit-transform:rotateZ(90deg);position:absolute;top:100px;left:1000px;font-size:900%;}
+div{position:absolute;top:0;left:0;height:100%;width:100%;background:#000;color:#fff;opacity:0;-webkit-transition:3s;line-height:100%;text-align:center}
+div.s{opacity:1}
+@-webkit-keyframes a{
+from{-webkit-transform:rotateZ(90deg);opacity:0}
+15%{-webkit-transform:rotateZ(0deg);opacity:1}
+25%{top:100px}
+30%{color:#4B7AD4; left:900px}
+40%{color:#5763F6}
+50%{color:#5EB4EB}
+60%{color:#5763F6}
+70%{color:#4B7AD4; left:600px}
+75%{top:200px}
+85%{opacity:1}
+to{-webkit-transform:rotateZ(10deg);opacity:0;left:-200px}}
+</style>
+<body><div id="z">That's all folks!</div><script>i=0;d=document
+"Hi DemoJS partiers and orga! Thx 4 being awesome! CSS rulez! 1k is not much and yet enough. \\o/".split(" ").map(function(e){
+a=d.createElement("p")
 a.style.webkitAnimation="a 2s "+(i++)+"s 1"
 a.innerHTML=e
+a.addEventListener("webkitAnimationEnd",function(){if(!--i){
+z.className='s'
+}})
 return a
 }).forEach(function(e){
-document.body.appendChild(e)
+d.body.appendChild(e)
 })
+
 </script> 
